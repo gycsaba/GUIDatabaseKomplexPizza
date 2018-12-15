@@ -4,7 +4,7 @@
     <Position X="1" Y="5.5" Width="2" />
     <AssociationLine Name="tetelek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.287" Y="1.529" />
+        <Position X="0.277" Y="0.987" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -63,7 +63,7 @@
         <Point X="3" Y="6.438" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.162" Y="0.258" />
+        <Position X="0.193" Y="-0.273" />
       </MemberNameLabel>
     </AssociationLine>
     <AssociationLine Name="rendelesek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
