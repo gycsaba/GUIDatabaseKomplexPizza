@@ -17,5 +17,9 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             this.adattar = new Adattar();
             adattar.adatokFeltoltese();
         }
+        public string getCegnev()
+        {
+            return cegnev;
+        }
     }
 }
