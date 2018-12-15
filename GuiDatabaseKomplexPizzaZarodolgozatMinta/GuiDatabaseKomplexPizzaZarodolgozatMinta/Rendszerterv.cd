@@ -21,5 +21,19 @@
       <FileName>Futar.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
+    <Position X="8" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAABAgAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Rendeles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
+    <Position X="3.75" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Tetel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
