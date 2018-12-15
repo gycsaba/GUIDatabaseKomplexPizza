@@ -35,16 +35,16 @@
             this.futárToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.egytöbbKapcsolatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.többtöbbKapcsolatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statisztikákToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adatbázisKonfigurációToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iskolaiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otthoniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statisztikákToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.névjegyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlPizza = new System.Windows.Forms.TabControl();
             this.tabPagePizza = new System.Windows.Forms.TabPage();
             this.tabPageVevo = new System.Windows.Forms.TabPage();
             this.tabPageFutar = new System.Windows.Forms.TabPage();
-            this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.tabControlPizza.SuspendLayout();
             this.SuspendLayout();
@@ -108,6 +108,12 @@
             this.többtöbbKapcsolatosToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
             this.többtöbbKapcsolatosToolStripMenuItem.Text = "Több-több kapcsolatos";
             // 
+            // statisztikákToolStripMenuItem
+            // 
+            this.statisztikákToolStripMenuItem.Name = "statisztikákToolStripMenuItem";
+            this.statisztikákToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.statisztikákToolStripMenuItem.Text = "Statisztikák";
+            // 
             // adatbázisKonfigurációToolStripMenuItem
             // 
             this.adatbázisKonfigurációToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -129,17 +135,18 @@
             this.otthoniToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.otthoniToolStripMenuItem.Text = "Otthoni";
             // 
-            // statisztikákToolStripMenuItem
-            // 
-            this.statisztikákToolStripMenuItem.Name = "statisztikákToolStripMenuItem";
-            this.statisztikákToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.statisztikákToolStripMenuItem.Text = "Statisztikák";
-            // 
             // névjegyToolStripMenuItem
             // 
             this.névjegyToolStripMenuItem.Name = "névjegyToolStripMenuItem";
             this.névjegyToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.névjegyToolStripMenuItem.Text = "Névjegy";
+            this.névjegyToolStripMenuItem.Click += new System.EventHandler(this.névjegyToolStripMenuItem_Click);
+            // 
+            // kilépésToolStripMenuItem
+            // 
+            this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
+            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.kilépésToolStripMenuItem.Text = "Kilépés";
             // 
             // tabControlPizza
             // 
@@ -180,12 +187,6 @@
             this.tabPageFutar.TabIndex = 2;
             this.tabPageFutar.Text = "Futár";
             this.tabPageFutar.UseVisualStyleBackColor = true;
-            // 
-            // kilépésToolStripMenuItem
-            // 
-            this.kilépésToolStripMenuItem.Name = "kilépésToolStripMenuItem";
-            this.kilépésToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.kilépésToolStripMenuItem.Text = "Kilépés";
             // 
             // FormMain
             // 

@@ -12,11 +12,19 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
     public partial class FormMain : Form
     {
+        #region mezőtulajdonságok
+        private PizzaFutar pf;
+        #endregion
+
+        #region Konstruktor
         public FormMain()
         {
+            pf = new PizzaFutar("Pizza Futár Kft.");
             InitializeComponent();
         }
+        #endregion
 
+        #region TabControl és menünpontok összekötése    
         private void pizzaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //tabControlPizza.SelectTab(0);
@@ -32,5 +40,6 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             tabControlPizza.SelectedTab = tabPageFutar;
         }
+        #endregion        
     }
 }
