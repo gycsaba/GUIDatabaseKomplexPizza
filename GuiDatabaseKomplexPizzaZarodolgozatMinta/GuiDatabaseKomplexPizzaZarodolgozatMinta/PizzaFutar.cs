@@ -11,7 +11,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 
         private string cegnev;
         private Adattar adattar;
-        private PizzaFutar(string cegnev)
+        public PizzaFutar(string cegnev)
         {
             this.cegnev = cegnev;
             this.adattar = new Adattar();
