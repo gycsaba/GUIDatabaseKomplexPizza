@@ -58,6 +58,7 @@
     <Compile Include="Futar.cs" />
     <Compile Include="MySQLDatabaseInterface.cs" />
     <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaFutar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rendeles.cs" />
