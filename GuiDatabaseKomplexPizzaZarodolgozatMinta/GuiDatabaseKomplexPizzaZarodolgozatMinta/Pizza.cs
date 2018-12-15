@@ -32,5 +32,17 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             this.ar = ar;
         }
+        public int getAzon()
+        {
+            return azon;
+        }
+        public string getNev()
+        {
+            return nev;
+        }
+        public int getAr()
+        {
+            return ar;
+        }
     }
 }
