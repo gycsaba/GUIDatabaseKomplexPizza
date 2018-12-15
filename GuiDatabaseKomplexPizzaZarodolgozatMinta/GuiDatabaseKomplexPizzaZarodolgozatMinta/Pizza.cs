@@ -20,5 +20,17 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             this.ar = ar;
             tetelek = new List<Tetel>();
         }
+        public void setAzon(int azon)
+        {
+            this.azon = azon;
+        }
+        public void setNev(string nev)
+        {
+            this.nev = nev;
+        }
+        public void setAr(int ar)
+        {
+            this.ar = ar;
+        }
     }
 }
