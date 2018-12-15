@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Pizza">
+    <Position X="1" Y="5.5" Width="2" />
+    <AssociationLine Name="tetelek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.277" Y="0.987" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAgAAAAgAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="tetelek" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Vevo">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <AssociationLine Name="rendelesek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.902" Y="0.518" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAIAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vevo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="rendelesek" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Futar">
+    <Position X="10.25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAIAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Futar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="rendelesek" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
+    <Position X="8" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAABAgAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Rendeles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
+    <Position X="3.75" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Tetel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Adattar">
+    <Position X="5.25" Y="0.5" Width="2.75" />
+    <AssociationLine Name="pizzak" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Pizza" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.452" Y="1.796" />
+        <Point X="6.452" Y="6.438" />
+        <Point X="3" Y="6.438" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.193" Y="-0.273" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="rendelesek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.421" Y="0.633" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgIAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Adattar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="futarok" />
+      <Field Name="pizzak" />
+      <Field Name="vevok" />
+      <Field Name="rendelesek" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
