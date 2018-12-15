@@ -11,5 +11,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private int azon;
         private string nev;
         private string cim;
+        ///<values>Vevő mely rendeléseket adta le</values>
+        List<Rendeles> rendelesek;
     }
 }

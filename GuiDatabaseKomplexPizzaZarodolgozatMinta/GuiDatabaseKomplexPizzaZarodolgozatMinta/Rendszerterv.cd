@@ -1,25 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Pizza">
-    <Position X="1" Y="5.5" Width="1.5" />
+    <Position X="1" Y="5.5" Width="2" />
+    <AssociationLine Name="tetelek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.204" Y="0.716" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAAAAAgAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAAAAAAAAAAAAgAAAAgAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="tetelek" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Vevo">
     <Position X="10.25" Y="0.75" Width="1.5" />
+    <AssociationLine Name="rendelesek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.172" Y="0.383" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAIAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Vevo.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="rendelesek" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Futar">
-    <Position X="10.25" Y="5.5" Width="1.5" />
+    <Position X="10.25" Y="5.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAIAAAAAAAAIAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Futar.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="rendelesek" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
     <Position X="8" Y="2.75" Width="2" />

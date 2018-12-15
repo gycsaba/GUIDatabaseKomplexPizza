@@ -11,5 +11,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private int azon;
         private string nev;
         private int ar;
+        /// <values>adott pizza mely tételekben szerepel</values>
+        private List<Tetel> tetelek;
     }
 }
