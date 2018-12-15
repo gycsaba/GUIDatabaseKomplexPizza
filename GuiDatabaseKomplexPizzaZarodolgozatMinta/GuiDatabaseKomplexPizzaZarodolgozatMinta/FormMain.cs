@@ -40,7 +40,8 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             tabControlPizza.SelectedTab = tabPageFutar;
         }
-        #region
+        #endregion
+        #region Menüpontok
         private void névjegyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(
@@ -49,7 +50,11 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
+
+        private void kilépésToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         #endregion
-        #endregion        
     }
 }
