@@ -13,5 +13,36 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private int ar;
         /// <values>adott pizza mely tételekben szerepel</values>
         private List<Tetel> tetelek;
+        public Pizza(int azon, string nev, int ar)
+        {
+            this.ar = ar;
+            this.nev = nev;
+            this.ar = ar;
+            tetelek = new List<Tetel>();
+        }
+        public void setAzon(int azon)
+        {
+            this.azon = azon;
+        }
+        public void setNev(string nev)
+        {
+            this.nev = nev;
+        }
+        public void setAr(int ar)
+        {
+            this.ar = ar;
+        }
+        public int getAzon()
+        {
+            return azon;
+        }
+        public string getNev()
+        {
+            return nev;
+        }
+        public int getAr()
+        {
+            return ar;
+        }
     }
 }
