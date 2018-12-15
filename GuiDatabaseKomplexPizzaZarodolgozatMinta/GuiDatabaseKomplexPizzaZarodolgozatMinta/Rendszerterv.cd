@@ -4,7 +4,7 @@
     <Position X="1" Y="5.5" Width="2" />
     <AssociationLine Name="tetelek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.204" Y="0.716" />
+        <Position X="0.287" Y="1.529" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -19,7 +19,7 @@
     <Position X="10.25" Y="0.75" Width="1.5" />
     <AssociationLine Name="rendelesek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
       <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.172" Y="0.383" />
+        <Position X="0.902" Y="0.518" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -53,6 +53,34 @@
       <HashCode>AAAAAAAAAAAQAAAAAAAAgAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Tetel.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Adattar">
+    <Position X="5.25" Y="0.5" Width="2.75" />
+    <AssociationLine Name="pizzak" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Pizza" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.452" Y="1.796" />
+        <Point X="6.452" Y="6.438" />
+        <Point X="3" Y="6.438" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.162" Y="0.258" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="rendelesek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.421" Y="0.633" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgIAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Adattar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="futarok" />
+      <Field Name="pizzak" />
+      <Field Name="vevok" />
+      <Field Name="rendelesek" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

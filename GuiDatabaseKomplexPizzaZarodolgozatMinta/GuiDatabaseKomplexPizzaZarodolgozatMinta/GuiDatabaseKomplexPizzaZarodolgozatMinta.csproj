@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adatbazis.cs" />
+    <Compile Include="Adattar.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
