@@ -40,6 +40,16 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             tabControlPizza.SelectedTab = tabPageFutar;
         }
+        #region
+        private void névjegyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                pf.getCegnev(),
+                "Program információ",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+        #endregion
         #endregion        
     }
 }
