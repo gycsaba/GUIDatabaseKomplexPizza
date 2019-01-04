@@ -48,7 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adatbazis.cs" />
-    <Compile Include="Adattar.cs" />
+    <Compile Include="AdattarFutarok.cs" />
+    <Compile Include="AdattarPizzak.cs" />
+    <Compile Include="AdattarRendelesek.cs" />
+    <Compile Include="AdattarTetelek.cs" />
+    <Compile Include="AdattarVevok.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,7 +90,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RendszertervOOP.cd" />
+    <None Include="RendszertervOOPAdattar.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
