@@ -8,7 +8,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAAAAAgAAAAgAAgAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACACCAAAgAAAAAIAAgIAAAgAAgAAAAAAAAAAAAAgA=</HashCode>
       <FileName>Pizza.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -58,8 +58,10 @@
     <Position X="5.25" Y="0.5" Width="2.75" />
     <AssociationLine Name="pizzak" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Pizza" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="6.452" Y="1.796" />
+        <Point X="6.452" Y="2.565" />
         <Point X="6.452" Y="6.438" />
+        <Point X="4.958" Y="6.438" Type="JumpStart" />
+        <Point X="4.792" Y="6.438" Type="JumpEnd" />
         <Point X="3" Y="6.438" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -72,13 +74,13 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAgIAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAgIAEAAAAEAAAAAAAAQAAEAAAAAAABAAAAAAA=</HashCode>
       <FileName>Adattar.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
-      <Field Name="futarok" />
       <Field Name="pizzak" />
       <Field Name="vevok" />
+      <Field Name="futarok" />
       <Field Name="rendelesek" />
     </ShowAsCollectionAssociation>
   </Class>
