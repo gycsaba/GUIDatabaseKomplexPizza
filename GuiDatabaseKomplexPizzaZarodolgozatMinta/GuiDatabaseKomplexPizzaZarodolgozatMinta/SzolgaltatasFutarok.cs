@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
-    class PizzaFutar
+    class SzolgaltatasFutarok
     {
+        private AdattarFutarok adattarFutarok;
 
-        private string cegnev;
-        public PizzaFutar(string cegnev)
+        public SzolgaltatasFutarok()
         {
-            this.cegnev = cegnev;
-        }
-        public string getCegnev()
-        {
-            return cegnev;
+            adattarFutarok = new AdattarFutarok();
         }
     }
 }

@@ -3,28 +3,118 @@
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.FormMain" Collapsed="true">
     <Position X="0.5" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>gkFAIAAIIDQAKAAiAACAEACCQAQQAAAAAgAAQAAAAIA=</HashCode>
+      <HashCode>gkFAIAAIIDQAKAAiAACAEACCQAQQAAgAAgAAQAAAAIA=</HashCode>
       <FileName>FormMain.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="pf" />
+      <Field Name="vezerlo" />
     </ShowAsAssociation>
   </Class>
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.PizzaFutar">
     <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAIAA=</HashCode>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
       <FileName>PizzaFutar.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Vezerlo">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAQAAEEAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Vezerlo.cs</FileName>
+    </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="adattar" />
+      <Field Name="szolgaltatasFutarok" />
+      <Field Name="szolgaltatasPizzak" />
+      <Field Name="szolgaltatasRendelesek" />
+      <Field Name="szolgaltatasTetelek" />
+      <Field Name="szolgaltatasVevok" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Adattar">
-    <Position X="7" Y="0.5" Width="1.5" />
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.SzolgaltatasFutarok" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAgIAEAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
-      <FileName>Adattar.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>SzolgaltatasFutarok.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="adattarFutarok" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.SzolgaltatasPizzak" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SzolgaltatasPizzak.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="adattarPizzak" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.SzolgaltatasRendelesek" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SzolgaltatasRendelesek.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="adattarRendelesek" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.SzolgaltatasTetelek" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SzolgaltatasTetelek.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="adattarTetelek" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.SzolgaltatasVevok" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SzolgaltatasVevok.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="adattarVevok" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.AdattarFutarok" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdattarFutarok.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.AdattarPizzak" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAEAAAAAAAAQAAEAAAAAAABAAAAAAA=</HashCode>
+      <FileName>AdattarPizzak.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.AdattarRendelesek" Collapsed="true">
+    <Position X="11.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdattarRendelesek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.AdattarTetelek" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdattarTetelek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.AdattarVevok" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdattarVevok.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

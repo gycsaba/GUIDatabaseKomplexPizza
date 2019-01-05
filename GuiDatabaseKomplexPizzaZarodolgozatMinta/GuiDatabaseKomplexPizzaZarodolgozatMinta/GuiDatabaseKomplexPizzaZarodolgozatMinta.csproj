@@ -48,7 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adatbazis.cs" />
-    <Compile Include="Adattar.cs" />
+    <Compile Include="AdattarFutarok.cs" />
+    <Compile Include="AdattarPizzak.cs" />
+    <Compile Include="AdattarRendelesek.cs" />
+    <Compile Include="AdattarTetelek.cs" />
+    <Compile Include="AdattarVevok.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,8 +66,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rendeles.cs" />
+    <Compile Include="SzolgaltatasFutarok.cs" />
+    <Compile Include="SzolgaltatasPizzak.cs" />
+    <Compile Include="SzolgaltatasRendelesek.cs" />
+    <Compile Include="SzolgaltatasTetelek.cs" />
+    <Compile Include="SzolgaltatasVevok.cs" />
     <Compile Include="Tetel.cs" />
     <Compile Include="Vevo.cs" />
+    <Compile Include="Vezerlo.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,7 +96,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RendszertervOOP.cd" />
+    <None Include="RendszertervOOPAdattar.cd" />
+    <None Include="RendszertervOOPSzolgaltatasAdattarReteg.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

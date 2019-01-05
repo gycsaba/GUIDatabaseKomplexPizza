@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
-    class Rendeles
+    class AdattarTetelek
     {
-        private int azon;
-        private int vevoAzon;
-        private int futarAzon;
-        private DateTime datum;
-        private List<Tetel> rendelesTetelei;
+        private List<Tetel> tetelek;
+        public AdattarTetelek()
+        {
+            tetelek = new List<Tetel>();
+        }
     }
 }

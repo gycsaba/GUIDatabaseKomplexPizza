@@ -9,20 +9,13 @@ using ConnectToMysqlDatabase;
 
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
-    class Adattar
+    class AdattarPizzak
     {
-        List<Pizza> pizzak;
-        List<Vevo> vevok;
-        List<Futar> futarok;
-        List<Rendeles> rendelesek;
+        private List<Pizza> pizzak;
 
-        public Adattar()
+        public AdattarPizzak()
         {
             pizzak = new List<Pizza>();
-            vevok = new List<Vevo>();
-            futarok = new List<Futar>();
-            rendelesek = new List<Rendeles>();
-
         }
 
         public void adatokFeltoltese()
