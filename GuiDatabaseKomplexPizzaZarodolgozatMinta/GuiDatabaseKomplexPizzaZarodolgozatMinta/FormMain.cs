@@ -14,12 +14,14 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
     {
         #region mezőtulajdonságok
         private PizzaFutar pf;
+        private Vezerlo vezerlo;
         #endregion
 
         #region Konstruktor
         public FormMain()
         {
             pf = new PizzaFutar("Pizza Futár Kft.");
+            vezerlo = new Vezerlo();
             InitializeComponent();
         }
         #endregion

@@ -10,12 +10,9 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
     {
 
         private string cegnev;
-        private Adattar adattar;
         public PizzaFutar(string cegnev)
         {
             this.cegnev = cegnev;
-            this.adattar = new Adattar();
-            adattar.adatokFeltoltese();
         }
         public string getCegnev()
         {
