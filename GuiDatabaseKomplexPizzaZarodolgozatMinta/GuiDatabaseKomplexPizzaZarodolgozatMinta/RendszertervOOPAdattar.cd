@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Pizza">
-    <Position X="1.25" Y="5.25" Width="2" />
+    <Position X="0.75" Y="5.25" Width="2.5" />
     <AssociationLine Name="tetelek" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.287" Y="0.8" />
@@ -47,10 +47,25 @@
   </Class>
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Rendeles">
     <Position X="4.75" Y="5.75" Width="2" />
+    <AssociationLine Name="rendelesTetelei" Type="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel" ManuallyRouted="true">
+      <Path>
+        <Point X="6.75" Y="7.006" />
+        <Point X="7.049" Y="7.006" />
+        <Point X="7.049" Y="7.507" />
+        <Point X="12.781" Y="7.507" />
+        <Point X="12.781" Y="6.988" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.058" Y="0.247" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAABAgAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Rendeles.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="rendelesTetelei" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GuiDatabaseKomplexPizzaZarodolgozatMinta.Tetel">
     <Position X="12.25" Y="5.5" Width="2.25" />

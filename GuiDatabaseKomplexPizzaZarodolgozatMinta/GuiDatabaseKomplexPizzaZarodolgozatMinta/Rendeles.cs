@@ -11,6 +11,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private int azon;
         private int vevoAzon;
         private int futarAzon;
-        DateTime datum;
+        private DateTime datum;
+        private List<Tetel> rendelesTetelei;
     }
 }
