@@ -8,9 +8,9 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
     class SzolgaltatasFutarok
     {
-        AdattarFutarok adattarFutarok;
+        private AdattarFutarok adattarFutarok;
 
-        SzolgaltatasFutarok()
+        public SzolgaltatasFutarok()
         {
             adattarFutarok = new AdattarFutarok();
         }

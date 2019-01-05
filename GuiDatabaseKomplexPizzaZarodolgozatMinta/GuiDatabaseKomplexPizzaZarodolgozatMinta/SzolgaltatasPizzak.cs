@@ -8,9 +8,9 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
     class SzolgaltatasPizzak
     {
-        AdattarPizzak adattarPizzak;
+        private AdattarPizzak adattarPizzak;
 
-        SzolgaltatasPizzak()
+        public SzolgaltatasPizzak()
         {
             adattarPizzak = new AdattarPizzak();
         }

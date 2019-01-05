@@ -8,9 +8,9 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
     class SzolgaltatasTetelek
     {
-        AdattarTetelek adattarTetelek;
+        private AdattarTetelek adattarTetelek;
 
-        SzolgaltatasTetelek()
+        public SzolgaltatasTetelek()
         {
             adattarTetelek = new AdattarTetelek();
         }

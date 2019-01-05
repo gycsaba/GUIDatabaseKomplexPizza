@@ -8,9 +8,9 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
     class SzolgaltatasVevok
     {
-        AdattarVevok adattarVevok;
+        private AdattarVevok adattarVevok;
 
-        SzolgaltatasVevok()
+        public SzolgaltatasVevok()
         {
             adattarVevok = new AdattarVevok();
         }
