@@ -73,6 +73,7 @@
     <Compile Include="SzolgaltatasVevok.cs" />
     <Compile Include="Tetel.cs" />
     <Compile Include="Vevo.cs" />
+    <Compile Include="Vezerlo.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
