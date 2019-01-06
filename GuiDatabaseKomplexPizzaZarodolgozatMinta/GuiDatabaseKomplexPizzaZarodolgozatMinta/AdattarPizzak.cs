@@ -59,6 +59,16 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
         }
 
+        public Pizza getPizza(int pizzaAzonosito)
+        {
+            if (pizzak.Exists(p => p.getAzon() == pizzaAzonosito))
+                return pizzak.Find(p => p.getAzon() == pizzaAzonosito);
+            else
+                throw new AdattarListaElemNemTalalhatoException(
+                    "AdattarPizzak: getPizza(int azonosito)\n"+
+                    pizzaAzonosito + " azonosítójú pizza nem található");
+        }
+
         public List<Pizza> getPizzak()
         {
             return pizzak;

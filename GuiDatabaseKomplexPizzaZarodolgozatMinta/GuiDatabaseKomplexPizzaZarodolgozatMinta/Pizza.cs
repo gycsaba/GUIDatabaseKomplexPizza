@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
-    class Pizza
+    public class Pizza
     {
         private int azon;
         private string nev;

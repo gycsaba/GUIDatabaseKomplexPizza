@@ -12,4 +12,10 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             : base(message)
         { }
     }
+    class AdattarListaElemNemTalalhatoException : Exception
+    {
+        public AdattarListaElemNemTalalhatoException(string message)
+            : base(message)
+        { }
+    }
 }

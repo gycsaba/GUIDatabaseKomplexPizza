@@ -59,6 +59,8 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             this.Close();
         }
-        #endregion      
+        #endregion
+
+      
     }
 }

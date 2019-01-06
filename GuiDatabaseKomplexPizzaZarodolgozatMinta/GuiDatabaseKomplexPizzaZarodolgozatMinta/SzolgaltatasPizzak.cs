@@ -41,5 +41,17 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
             
         }
+        public Pizza getPizza(int pizzaAzonosito)
+        {
+            try
+            {
+                Pizza p = adattarPizzak.getPizza(pizzaAzonosito);
+                return p;
+            }
+            catch(AdattarListaElemNemTalalhatoException ex)
+            {
+                throw new Exception(ex.Message+ "\nSzolgaltatlas pizzak: getPizza(int azonosito)");
+            }
+        }
     }
 }

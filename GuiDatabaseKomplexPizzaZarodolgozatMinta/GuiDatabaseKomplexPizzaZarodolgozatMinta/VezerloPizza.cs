@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +25,21 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message + "\nVezérlő:getPizzakTable()+szolgaltatasPizzak.getPizzakTabla())");
+                Debug.Write(ex.Message + "\nVezérlő:getPizzakTable()+szolgaltatasPizzak.getPizzakTabla())");
+                return null;
             }
-        }     
+        }
+        public void lekerPizzaAdatokatModositashoz(int pizzaAzonosito)
+        {
+            try
+            {
+                Pizza p = szolgaltatasPizzak.getPizza(pizzaAzonosito);
+                fm.eltarolEsMegjelenitPizzatModositashoz(p);
+            }
+            catch (Exception ex)
+            {
+                Debug.Write(ex.Message + "\nVezérlő:getPizzakTable()+szolgaltatasPizzak.getPizzakTabla())");
+            }
+        }
     }
 }

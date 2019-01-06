@@ -43,13 +43,19 @@
             this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlPizza = new System.Windows.Forms.TabControl();
             this.tabPagePizza = new System.Windows.Forms.TabPage();
+            this.buttonPizzaDelete = new System.Windows.Forms.Button();
             this.buttonPizzaModify = new System.Windows.Forms.Button();
             this.buttonPizzaNew = new System.Windows.Forms.Button();
             this.buttonPizzaLoad = new System.Windows.Forms.Button();
-            this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
             this.tabPageVevo = new System.Windows.Forms.TabPage();
             this.tabPageFutar = new System.Windows.Forms.TabPage();
-            this.buttonPizzaDelete = new System.Windows.Forms.Button();
+            this.labelPizzaAzonosito = new System.Windows.Forms.Label();
+            this.textBoxPizzaAzonosito = new System.Windows.Forms.TextBox();
+            this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
+            this.textBoxPizzaNev = new System.Windows.Forms.TextBox();
+            this.labelPizzaNev = new System.Windows.Forms.Label();
+            this.textBoxPizzaAr = new System.Windows.Forms.TextBox();
+            this.labelPizzaAr = new System.Windows.Forms.Label();
             this.menuStripMain.SuspendLayout();
             this.tabControlPizza.SuspendLayout();
             this.tabPagePizza.SuspendLayout();
@@ -169,6 +175,12 @@
             // 
             // tabPagePizza
             // 
+            this.tabPagePizza.Controls.Add(this.textBoxPizzaAr);
+            this.tabPagePizza.Controls.Add(this.labelPizzaAr);
+            this.tabPagePizza.Controls.Add(this.textBoxPizzaNev);
+            this.tabPagePizza.Controls.Add(this.labelPizzaNev);
+            this.tabPagePizza.Controls.Add(this.textBoxPizzaAzonosito);
+            this.tabPagePizza.Controls.Add(this.labelPizzaAzonosito);
             this.tabPagePizza.Controls.Add(this.buttonPizzaDelete);
             this.tabPagePizza.Controls.Add(this.buttonPizzaModify);
             this.tabPagePizza.Controls.Add(this.buttonPizzaNew);
@@ -181,6 +193,15 @@
             this.tabPagePizza.TabIndex = 0;
             this.tabPagePizza.Text = "Pizza";
             this.tabPagePizza.UseVisualStyleBackColor = true;
+            // 
+            // buttonPizzaDelete
+            // 
+            this.buttonPizzaDelete.Location = new System.Drawing.Point(814, 126);
+            this.buttonPizzaDelete.Name = "buttonPizzaDelete";
+            this.buttonPizzaDelete.Size = new System.Drawing.Size(158, 23);
+            this.buttonPizzaDelete.TabIndex = 5;
+            this.buttonPizzaDelete.Text = "Törlés";
+            this.buttonPizzaDelete.UseVisualStyleBackColor = true;
             // 
             // buttonPizzaModify
             // 
@@ -210,14 +231,6 @@
             this.buttonPizzaLoad.UseVisualStyleBackColor = true;
             this.buttonPizzaLoad.Click += new System.EventHandler(this.buttonPizzaLoad_Click);
             // 
-            // dataGridViewPizza
-            // 
-            this.dataGridViewPizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPizza.Location = new System.Drawing.Point(-4, 0);
-            this.dataGridViewPizza.Name = "dataGridViewPizza";
-            this.dataGridViewPizza.Size = new System.Drawing.Size(794, 618);
-            this.dataGridViewPizza.TabIndex = 0;
-            // 
             // tabPageVevo
             // 
             this.tabPageVevo.Location = new System.Drawing.Point(4, 22);
@@ -237,14 +250,63 @@
             this.tabPageFutar.Text = "Futár";
             this.tabPageFutar.UseVisualStyleBackColor = true;
             // 
-            // buttonPizzaDelete
+            // labelPizzaAzonosito
             // 
-            this.buttonPizzaDelete.Location = new System.Drawing.Point(814, 126);
-            this.buttonPizzaDelete.Name = "buttonPizzaDelete";
-            this.buttonPizzaDelete.Size = new System.Drawing.Size(158, 23);
-            this.buttonPizzaDelete.TabIndex = 5;
-            this.buttonPizzaDelete.Text = "Törlés";
-            this.buttonPizzaDelete.UseVisualStyleBackColor = true;
+            this.labelPizzaAzonosito.AutoSize = true;
+            this.labelPizzaAzonosito.Location = new System.Drawing.Point(811, 266);
+            this.labelPizzaAzonosito.Name = "labelPizzaAzonosito";
+            this.labelPizzaAzonosito.Size = new System.Drawing.Size(55, 13);
+            this.labelPizzaAzonosito.TabIndex = 7;
+            this.labelPizzaAzonosito.Text = "Azonosító";
+            // 
+            // textBoxPizzaAzonosito
+            // 
+            this.textBoxPizzaAzonosito.Location = new System.Drawing.Point(814, 282);
+            this.textBoxPizzaAzonosito.Name = "textBoxPizzaAzonosito";
+            this.textBoxPizzaAzonosito.ReadOnly = true;
+            this.textBoxPizzaAzonosito.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPizzaAzonosito.TabIndex = 8;
+            // 
+            // dataGridViewPizza
+            // 
+            this.dataGridViewPizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPizza.Location = new System.Drawing.Point(-4, 0);
+            this.dataGridViewPizza.Name = "dataGridViewPizza";
+            this.dataGridViewPizza.Size = new System.Drawing.Size(794, 618);
+            this.dataGridViewPizza.TabIndex = 0;
+            this.dataGridViewPizza.SelectionChanged += new System.EventHandler(this.dataGridViewPizza_SelectionChanged);
+            // 
+            // textBoxPizzaNev
+            // 
+            this.textBoxPizzaNev.Location = new System.Drawing.Point(814, 328);
+            this.textBoxPizzaNev.Name = "textBoxPizzaNev";
+            this.textBoxPizzaNev.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPizzaNev.TabIndex = 10;
+            // 
+            // labelPizzaNev
+            // 
+            this.labelPizzaNev.AutoSize = true;
+            this.labelPizzaNev.Location = new System.Drawing.Point(811, 312);
+            this.labelPizzaNev.Name = "labelPizzaNev";
+            this.labelPizzaNev.Size = new System.Drawing.Size(27, 13);
+            this.labelPizzaNev.TabIndex = 9;
+            this.labelPizzaNev.Text = "Név";
+            // 
+            // textBoxPizzaAr
+            // 
+            this.textBoxPizzaAr.Location = new System.Drawing.Point(814, 376);
+            this.textBoxPizzaAr.Name = "textBoxPizzaAr";
+            this.textBoxPizzaAr.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPizzaAr.TabIndex = 12;
+            // 
+            // labelPizzaAr
+            // 
+            this.labelPizzaAr.AutoSize = true;
+            this.labelPizzaAr.Location = new System.Drawing.Point(811, 360);
+            this.labelPizzaAr.Name = "labelPizzaAr";
+            this.labelPizzaAr.Size = new System.Drawing.Size(51, 13);
+            this.labelPizzaAr.TabIndex = 11;
+            this.labelPizzaAr.Text = "Egységár";
             // 
             // FormMain
             // 
@@ -261,6 +323,7 @@
             this.menuStripMain.PerformLayout();
             this.tabControlPizza.ResumeLayout(false);
             this.tabPagePizza.ResumeLayout(false);
+            this.tabPagePizza.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPizza)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -286,11 +349,17 @@
         private System.Windows.Forms.TabPage tabPageVevo;
         private System.Windows.Forms.TabPage tabPageFutar;
         private System.Windows.Forms.ToolStripMenuItem kilépésToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridViewPizza;
         private System.Windows.Forms.Button buttonPizzaLoad;
         private System.Windows.Forms.Button buttonPizzaModify;
         private System.Windows.Forms.Button buttonPizzaNew;
         private System.Windows.Forms.Button buttonPizzaDelete;
+        private System.Windows.Forms.TextBox textBoxPizzaNev;
+        private System.Windows.Forms.Label labelPizzaNev;
+        private System.Windows.Forms.TextBox textBoxPizzaAzonosito;
+        private System.Windows.Forms.Label labelPizzaAzonosito;
+        private System.Windows.Forms.DataGridView dataGridViewPizza;
+        private System.Windows.Forms.TextBox textBoxPizzaAr;
+        private System.Windows.Forms.Label labelPizzaAr;
     }
 }
 
