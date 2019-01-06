@@ -16,10 +16,15 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
                 DataTable dtPizza = szolgaltatasPizzak.getPizzakTabla();
                 return dtPizza;
             }
+            catch (SzolgaltatasokUresTablaException ex)
+            {
+                //Szükség volna csak az új gomb elérhetővé tetélére
+                return null;
+            }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message + "\nVezérlő:getPizzakTable()+szolgaltatasPizzak.getPizzakTabla())");
             }
-        }
+        }     
     }
 }

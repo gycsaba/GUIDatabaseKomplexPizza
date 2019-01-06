@@ -24,5 +24,13 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
                 Debug.WriteLine(ex.Message);
             }
         }
+        private void beallitPizzaVezerloketKezdetiAllapotba()
+        {
+            buttonPizzaLoad.Visible = true;
+            buttonPizzaNew.Visible = false;
+            buttonPizzaModify.Visible = false;
+            buttonPizzaDelete.Visible = false;
+
+        }
     }
 }

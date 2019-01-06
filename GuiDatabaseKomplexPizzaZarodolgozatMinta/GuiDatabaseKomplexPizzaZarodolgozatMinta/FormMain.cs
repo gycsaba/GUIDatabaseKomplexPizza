@@ -23,6 +23,8 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             pf = new PizzaFutar("Pizza Futár Kft.");
             vezerlo = new Vezerlo();
             InitializeComponent();
+
+            beallitPizzaVezerloketKezdetiAllapotba();
         }
         #endregion
 
@@ -57,7 +59,6 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             this.Close();
         }
-        #endregion
-        
+        #endregion      
     }
 }

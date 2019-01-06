@@ -43,10 +43,13 @@
             this.kilépésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControlPizza = new System.Windows.Forms.TabControl();
             this.tabPagePizza = new System.Windows.Forms.TabPage();
+            this.buttonPizzaModify = new System.Windows.Forms.Button();
+            this.buttonPizzaNew = new System.Windows.Forms.Button();
+            this.buttonPizzaLoad = new System.Windows.Forms.Button();
+            this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
             this.tabPageVevo = new System.Windows.Forms.TabPage();
             this.tabPageFutar = new System.Windows.Forms.TabPage();
-            this.dataGridViewPizza = new System.Windows.Forms.DataGridView();
-            this.buttonPizzaLoad = new System.Windows.Forms.Button();
+            this.buttonPizzaDelete = new System.Windows.Forms.Button();
             this.menuStripMain.SuspendLayout();
             this.tabControlPizza.SuspendLayout();
             this.tabPagePizza.SuspendLayout();
@@ -166,6 +169,9 @@
             // 
             // tabPagePizza
             // 
+            this.tabPagePizza.Controls.Add(this.buttonPizzaDelete);
+            this.tabPagePizza.Controls.Add(this.buttonPizzaModify);
+            this.tabPagePizza.Controls.Add(this.buttonPizzaNew);
             this.tabPagePizza.Controls.Add(this.buttonPizzaLoad);
             this.tabPagePizza.Controls.Add(this.dataGridViewPizza);
             this.tabPagePizza.Location = new System.Drawing.Point(4, 22);
@@ -175,6 +181,42 @@
             this.tabPagePizza.TabIndex = 0;
             this.tabPagePizza.Text = "Pizza";
             this.tabPagePizza.UseVisualStyleBackColor = true;
+            // 
+            // buttonPizzaModify
+            // 
+            this.buttonPizzaModify.Location = new System.Drawing.Point(814, 97);
+            this.buttonPizzaModify.Name = "buttonPizzaModify";
+            this.buttonPizzaModify.Size = new System.Drawing.Size(158, 23);
+            this.buttonPizzaModify.TabIndex = 4;
+            this.buttonPizzaModify.Text = "Módosít";
+            this.buttonPizzaModify.UseVisualStyleBackColor = true;
+            // 
+            // buttonPizzaNew
+            // 
+            this.buttonPizzaNew.Location = new System.Drawing.Point(814, 68);
+            this.buttonPizzaNew.Name = "buttonPizzaNew";
+            this.buttonPizzaNew.Size = new System.Drawing.Size(158, 23);
+            this.buttonPizzaNew.TabIndex = 3;
+            this.buttonPizzaNew.Text = "Új pizza";
+            this.buttonPizzaNew.UseVisualStyleBackColor = true;
+            // 
+            // buttonPizzaLoad
+            // 
+            this.buttonPizzaLoad.Location = new System.Drawing.Point(814, 6);
+            this.buttonPizzaLoad.Name = "buttonPizzaLoad";
+            this.buttonPizzaLoad.Size = new System.Drawing.Size(158, 23);
+            this.buttonPizzaLoad.TabIndex = 2;
+            this.buttonPizzaLoad.Text = "Pizza adatok betöltése";
+            this.buttonPizzaLoad.UseVisualStyleBackColor = true;
+            this.buttonPizzaLoad.Click += new System.EventHandler(this.buttonPizzaLoad_Click);
+            // 
+            // dataGridViewPizza
+            // 
+            this.dataGridViewPizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPizza.Location = new System.Drawing.Point(-4, 0);
+            this.dataGridViewPizza.Name = "dataGridViewPizza";
+            this.dataGridViewPizza.Size = new System.Drawing.Size(794, 618);
+            this.dataGridViewPizza.TabIndex = 0;
             // 
             // tabPageVevo
             // 
@@ -195,23 +237,14 @@
             this.tabPageFutar.Text = "Futár";
             this.tabPageFutar.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewPizza
+            // buttonPizzaDelete
             // 
-            this.dataGridViewPizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPizza.Location = new System.Drawing.Point(-4, 0);
-            this.dataGridViewPizza.Name = "dataGridViewPizza";
-            this.dataGridViewPizza.Size = new System.Drawing.Size(794, 618);
-            this.dataGridViewPizza.TabIndex = 0;
-            // 
-            // buttonPizzaLoad
-            // 
-            this.buttonPizzaLoad.Location = new System.Drawing.Point(814, 6);
-            this.buttonPizzaLoad.Name = "buttonPizzaLoad";
-            this.buttonPizzaLoad.Size = new System.Drawing.Size(158, 23);
-            this.buttonPizzaLoad.TabIndex = 2;
-            this.buttonPizzaLoad.Text = "Pizza adatok betöltése";
-            this.buttonPizzaLoad.UseVisualStyleBackColor = true;
-            this.buttonPizzaLoad.Click += new System.EventHandler(this.buttonPizzaLoad_Click);
+            this.buttonPizzaDelete.Location = new System.Drawing.Point(814, 126);
+            this.buttonPizzaDelete.Name = "buttonPizzaDelete";
+            this.buttonPizzaDelete.Size = new System.Drawing.Size(158, 23);
+            this.buttonPizzaDelete.TabIndex = 5;
+            this.buttonPizzaDelete.Text = "Törlés";
+            this.buttonPizzaDelete.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -255,6 +288,9 @@
         private System.Windows.Forms.ToolStripMenuItem kilépésToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridViewPizza;
         private System.Windows.Forms.Button buttonPizzaLoad;
+        private System.Windows.Forms.Button buttonPizzaModify;
+        private System.Windows.Forms.Button buttonPizzaNew;
+        private System.Windows.Forms.Button buttonPizzaDelete;
     }
 }
 

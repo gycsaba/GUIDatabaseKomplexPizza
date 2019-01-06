@@ -70,6 +70,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rendeles.cs" />
     <Compile Include="SzolgaltatasFutarok.cs" />
+    <Compile Include="ExceptionSzolgaltatasok.cs" />
     <Compile Include="SzolgaltatasPizzak.cs" />
     <Compile Include="SzolgaltatasRendelesek.cs" />
     <Compile Include="SzolgaltatasTetelek.cs" />

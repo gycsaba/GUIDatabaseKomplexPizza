@@ -16,9 +16,30 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             adattarPizzak = new AdattarPizzak();
         }
 
-        internal DataTable getPizzakTabla()
+        public DataTable getPizzakTabla()
         {
-            throw new NotImplementedException();
+            try
+            {
+                adattarPizzak.adatokFeltoltese();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message + "\nSzolgaltatlas pizzak: getPizzakTable()");
+            }
+            try
+            {
+                DataTable dtPizzak=adattarPizzak.getPizzaDTFromList();
+                if (dtPizzak.Rows.Count == 0)
+                    throw new SzolgaltatasokUresTablaException
+                        ("SzolgaltatasokPizzak osztály:adatokFeltoltese() method:","pizzak");
+                else
+                    return dtPizzak;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message + "\nSzolgaltatlas pizzak: getPizzakTable()");
+            }
+            
         }
     }
 }
