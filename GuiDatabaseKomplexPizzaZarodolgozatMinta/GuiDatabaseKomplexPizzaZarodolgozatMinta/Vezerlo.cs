@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
-    class Vezerlo
+    partial class Vezerlo
     {
         private SzolgaltatasPizzak szolgaltatasPizzak;
         private SzolgaltatasVevok szolgaltatasVevok;
@@ -14,13 +14,15 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private SzolgaltatasRendelesek szolgaltatasRendelesek;
         private SzolgaltatasTetelek szolgaltatasTetelek;
 
-        public Vezerlo()
+        private FormMain fm;
+        public Vezerlo(FormMain fm)
         {
+            this.fm = fm;
             szolgaltatasPizzak=new SzolgaltatasPizzak();
             szolgaltatasVevok = new SzolgaltatasVevok();
             szolgaltatasFutarok=new SzolgaltatasFutarok();
             szolgaltatasRendelesek=new SzolgaltatasRendelesek();
             szolgaltatasTetelek=new SzolgaltatasTetelek();
-        }
+        }        
     }
 }

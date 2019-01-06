@@ -26,7 +26,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
             catch (Exception e)
             {
-                Debug.WriteLine(e.Message);
+                throw new AdattarAdatbazisTablaBeolvasasException(e.Message);
             }
         }
 
@@ -35,12 +35,16 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             Adatbazis a = new Adatbazis();
             MySQLDatabaseInterface mdi = new MySQLDatabaseInterface();
             mdi = a.kapcsolodas();
-            mdi.open();
-            string query = "SELECT * FROM ppizza";
-            DataTable pizzadt = new DataTable();
-            pizzadt = mdi.getToDataTable(query);
-            feltoltPizzaListat(pizzadt);
-            mdi.close();
+            if (mdi.open())
+            {
+                string query = "SELECT * FROM ppizza";
+                DataTable pizzadt = new DataTable();
+                pizzadt = mdi.getToDataTable(query);
+                feltoltPizzaListat(pizzadt);
+                mdi.close();
+            }
+            else
+                throw new Exception("Pizza adatbázis megnyitása nem sikerült");
         }
 
         private void feltoltPizzaListat(DataTable pizzadt)
@@ -53,6 +57,16 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
                 Pizza p = new Pizza(azon, nev, ar);
                 pizzak.Add(p);
             }
+        }
+
+        public Pizza keresPizza(int pizzaAzonosito)
+        {
+            if (pizzak.Exists(p => p.getAzon() == pizzaAzonosito))
+                return pizzak.Find(p => p.getAzon() == pizzaAzonosito);
+            else
+                throw new AdattarListabanKeresettElemNemTalalhatoException(
+                    "AdattarPizzak: getPizza(int azonosito)\n"+
+                    pizzaAzonosito + " azonosítójú pizza nem található");
         }
 
         public List<Pizza> getPizzak()
@@ -70,6 +84,23 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
                 pizzaDT.Rows.Add(p.getAzon(), p.getNev(), p.getAr());
             }
             return pizzaDT;
+        }
+
+        public void modositPizza(Pizza ujPizza, int modositandoPizzaAzonosito)
+        {
+            string query = ujPizza.getSQLUpdate();
+            query += " WHERE pazon=" + modositandoPizzaAzonosito;
+            Debug.WriteLine(query);
+            Adatbazis a = new Adatbazis();
+            MySQLDatabaseInterface mdi = new MySQLDatabaseInterface();
+            mdi = a.kapcsolodas();
+            if (mdi.open())
+            {
+                mdi.executeDMQuery(query);
+                mdi.close();
+            }
+            else
+                throw new Exception("Pizza adatbázis megnyitása nem sikerült");
         }
     }
 }

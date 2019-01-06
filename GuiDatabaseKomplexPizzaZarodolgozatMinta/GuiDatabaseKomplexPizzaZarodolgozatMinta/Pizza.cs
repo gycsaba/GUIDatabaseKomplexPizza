@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
-    class Pizza
+    public class Pizza
     {
         private int azon;
         private string nev;
@@ -15,7 +15,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private List<Tetel> tetelek;
         public Pizza(int azon, string nev, int ar)
         {
-            this.ar = ar;
+            this.azon = azon;
             this.nev = nev;
             this.ar = ar;
             tetelek = new List<Tetel>();
@@ -43,6 +43,17 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         public int getAr()
         {
             return ar;
+        }
+
+        internal string getSQLUpdate()
+        {
+            string query =
+                "UPDATE ppizza " +
+                " SET " +
+                " pazon=" + azon +
+                ", pnev=\"" + nev + "\"" +
+                ", par=" + ar;
+            return query;
         }
     }
 }
