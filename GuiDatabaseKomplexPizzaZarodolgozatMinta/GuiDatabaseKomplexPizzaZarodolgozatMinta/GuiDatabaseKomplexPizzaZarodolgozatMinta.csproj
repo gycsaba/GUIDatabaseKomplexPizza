@@ -59,6 +59,9 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMainPizza.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Futar.cs" />
     <Compile Include="MySQLDatabaseInterface.cs" />
     <Compile Include="Pizza.cs" />

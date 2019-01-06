@@ -22,5 +22,10 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             szolgaltatasRendelesek=new SzolgaltatasRendelesek();
             szolgaltatasTetelek=new SzolgaltatasTetelek();
         }
+
+        internal object getPizzakTabla()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
