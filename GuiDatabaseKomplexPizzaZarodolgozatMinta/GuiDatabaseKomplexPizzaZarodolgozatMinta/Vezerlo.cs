@@ -14,8 +14,10 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private SzolgaltatasRendelesek szolgaltatasRendelesek;
         private SzolgaltatasTetelek szolgaltatasTetelek;
 
-        public Vezerlo()
+        private FormMain fm;
+        public Vezerlo(FormMain fm)
         {
+            this.fm = fm;
             szolgaltatasPizzak=new SzolgaltatasPizzak();
             szolgaltatasVevok = new SzolgaltatasVevok();
             szolgaltatasFutarok=new SzolgaltatasFutarok();

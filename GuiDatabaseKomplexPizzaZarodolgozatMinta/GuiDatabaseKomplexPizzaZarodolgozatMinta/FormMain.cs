@@ -21,7 +21,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         public FormMain()
         {
             pf = new PizzaFutar("Pizza Futár Kft.");
-            vezerlo = new Vezerlo();
+            vezerlo = new Vezerlo(this);
             InitializeComponent();
 
             beallitPizzaVezerloketKezdetiAllapotba();

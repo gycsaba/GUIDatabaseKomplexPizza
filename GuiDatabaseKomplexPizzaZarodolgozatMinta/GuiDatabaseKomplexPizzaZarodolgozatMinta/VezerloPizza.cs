@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
     partial class Vezerlo
-    {
+    { 
         public  DataTable getPizzakTabla()
         {
             try
@@ -18,7 +18,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
             catch (SzolgaltatasokUresTablaException ex)
             {
-                //Szükség volna csak az új gomb elérhetővé tetélére
+                fm.beallitPizzaVezerloketUresTablaAllapotba();
                 return null;
             }
             catch (Exception ex)
