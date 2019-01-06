@@ -77,6 +77,7 @@
     <Compile Include="Tetel.cs" />
     <Compile Include="Vevo.cs" />
     <Compile Include="Vezerlo.cs" />
+    <Compile Include="VezerloPizza.cs" />
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>

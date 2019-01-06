@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,11 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         public SzolgaltatasPizzak()
         {
             adattarPizzak = new AdattarPizzak();
+        }
+
+        internal DataTable getPizzakTabla()
+        {
+            throw new NotImplementedException();
         }
     }
 }

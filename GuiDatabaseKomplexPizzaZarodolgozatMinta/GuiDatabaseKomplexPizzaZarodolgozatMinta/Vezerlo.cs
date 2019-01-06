@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
-    class Vezerlo
+    partial class Vezerlo
     {
         private SzolgaltatasPizzak szolgaltatasPizzak;
         private SzolgaltatasVevok szolgaltatasVevok;
@@ -21,11 +21,6 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             szolgaltatasFutarok=new SzolgaltatasFutarok();
             szolgaltatasRendelesek=new SzolgaltatasRendelesek();
             szolgaltatasTetelek=new SzolgaltatasTetelek();
-        }
-
-        internal object getPizzakTabla()
-        {
-            throw new NotImplementedException();
-        }
+        }        
     }
 }
