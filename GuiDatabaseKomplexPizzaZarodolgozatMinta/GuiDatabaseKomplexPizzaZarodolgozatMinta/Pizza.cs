@@ -15,7 +15,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         private List<Tetel> tetelek;
         public Pizza(int azon, string nev, int ar)
         {
-            this.ar = ar;
+            this.azon = azon;
             this.nev = nev;
             this.ar = ar;
             tetelek = new List<Tetel>();

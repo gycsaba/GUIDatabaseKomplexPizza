@@ -26,7 +26,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
             catch (Exception e)
             {
-                Debug.WriteLine(e.Message);
+                throw new AdattarAdatbazisTablaBeolvasasException(e.Message);
             }
         }
 
@@ -35,12 +35,16 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             Adatbazis a = new Adatbazis();
             MySQLDatabaseInterface mdi = new MySQLDatabaseInterface();
             mdi = a.kapcsolodas();
-            mdi.open();
-            string query = "SELECT * FROM ppizza";
-            DataTable pizzadt = new DataTable();
-            pizzadt = mdi.getToDataTable(query);
-            feltoltPizzaListat(pizzadt);
-            mdi.close();
+            if (mdi.open())
+            {
+                string query = "SELECT * FROM ppizza";
+                DataTable pizzadt = new DataTable();
+                pizzadt = mdi.getToDataTable(query);
+                feltoltPizzaListat(pizzadt);
+                mdi.close();
+            }
+            else
+                throw new Exception("Pizza adatbázis megnyitása nem sikerült");
         }
 
         private void feltoltPizzaListat(DataTable pizzadt)

@@ -14,6 +14,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             try
             {
                 DataTable dtPizza = szolgaltatasPizzak.getPizzakTabla();
+                fm.beallitPizzaVezerloketSikeresBetoltesUtan();
                 return dtPizza;
             }
             catch (SzolgaltatasokUresTablaException ex)

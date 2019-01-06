@@ -53,6 +53,7 @@
     <Compile Include="AdattarRendelesek.cs" />
     <Compile Include="AdattarTetelek.cs" />
     <Compile Include="AdattarVevok.cs" />
+    <Compile Include="ExceptionAdattar.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>

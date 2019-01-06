@@ -31,6 +31,13 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             buttonPizzaModify.Visible = false;
             buttonPizzaDelete.Visible = false;
         }
+        public void beallitPizzaVezerloketSikeresBetoltesUtan()
+        {
+            buttonPizzaLoad.Visible = false;
+            buttonPizzaNew.Visible = true;
+            buttonPizzaModify.Visible = true;
+            buttonPizzaDelete.Visible = true;
+        }
         private void beallitPizzaVezerloketKezdetiAllapotba()
         {
             buttonPizzaLoad.Visible = true;
