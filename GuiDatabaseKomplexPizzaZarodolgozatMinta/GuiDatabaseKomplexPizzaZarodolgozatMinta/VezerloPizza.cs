@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
 {
     partial class Vezerlo
-    { 
-        public  DataTable getPizzakTabla()
+    {
+        public DataTable getPizzakTabla()
         {
             try
             {
@@ -25,7 +25,7 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
             catch (Exception ex)
             {
-                Debug.Write(ex.Message + "\nVezérlő:getPizzakTable()+szolgaltatasPizzak.getPizzakTabla())");
+                Debug.Write(ex.Message + "\nVezérlő:getPizzakTable()");
                 return null;
             }
         }
@@ -38,7 +38,18 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             }
             catch (Exception ex)
             {
-                Debug.Write(ex.Message + "\nVezérlő:getPizzakTable()+szolgaltatasPizzak.getPizzakTabla())");
+                Debug.Write(ex.Message + "\nVezérlő:lekerPizzaAdatokatModositashoz()");
+            }
+        }
+        public void modositPizzat(Pizza modositandoPizza, Pizza ujPizza)
+        {
+            try
+            {
+                szolgaltatasPizzak.modositPizzat(modositandoPizza, ujPizza);
+            }
+            catch (Exception ex)
+            {
+                Debug.Write(ex.Message + "\nVezérlő:modositPizzat())");
             }
         }
     }

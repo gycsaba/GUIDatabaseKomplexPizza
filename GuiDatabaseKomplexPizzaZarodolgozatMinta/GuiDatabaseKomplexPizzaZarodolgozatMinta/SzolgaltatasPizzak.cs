@@ -45,12 +45,33 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             try
             {
-                Pizza p = adattarPizzak.getPizza(pizzaAzonosito);
+                Pizza p = adattarPizzak.keresPizza(pizzaAzonosito);
                 return p;
             }
-            catch(AdattarListaElemNemTalalhatoException ex)
+            catch(AdattarListabanKeresettElemNemTalalhatoException ex)
             {
                 throw new Exception(ex.Message+ "\nSzolgaltatlas pizzak: getPizza(int azonosito)");
+            }
+        }
+
+        public void modositPizzat(Pizza modositandoPizza, Pizza ujPizza)
+        {
+            try
+            {
+                if (modositandoPizza.getAzon() != ujPizza.getAzon())
+                    throw new SzolgaltatasModositandokAzonositojaNemEgyezikException(
+                        "Módosítandó pizza azonositó:" + modositandoPizza.getAzon() +
+                        "\nÚj pizza azonosító" + ujPizza.getAzon() +
+                        "\nA két azonosító nem egyezik, így a módosítandót nem lehet újra pizzára lecserélni"
+                        );
+                Pizza p = adattarPizzak.keresPizza(modositandoPizza.getAzon());
+                adattarPizzak.modositPizza(ujPizza, modositandoPizza.getAzon());
+            }
+            catch (AdattarListabanKeresettElemNemTalalhatoException ex)
+            {
+                throw new Exception(
+                    "Módosítandó pizza: " + modositandoPizza.ToString() +
+                    "adatok között nem található így módosítani nem lehet");
             }
         }
     }

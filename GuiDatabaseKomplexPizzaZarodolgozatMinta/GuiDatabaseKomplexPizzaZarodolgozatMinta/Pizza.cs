@@ -44,5 +44,16 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
         {
             return ar;
         }
+
+        internal string getSQLUpdate()
+        {
+            string query =
+                "UPDATE ppizza " +
+                " SET " +
+                " pazon=" + azon +
+                ", pnev=\"" + nev + "\"" +
+                ", par=" + ar;
+            return query;
+        }
     }
 }

@@ -26,6 +26,27 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
                 Debug.WriteLine(ex.Message);
             }
         }
+        private void buttonPizzaModify_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int ujPizzaAzonosito = Convert.ToInt32(textBoxPizzaAzonosito.Text);
+                string ujPizzaNev = textBoxPizzaNev.Text;
+                int ujPizzaAr = Convert.ToInt32(textBoxPizzaAr.Text);
+                Pizza ujPizza = new Pizza(
+                    ujPizzaAzonosito,
+                    ujPizzaNev,
+                    ujPizzaAr
+                );
+                vezerlo.modositPizzat(kivalasztottPizza, ujPizza);
+                kijeloltSorbanPizzaAdatModositas(ujPizza);
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+        }
         private void dataGridViewPizza_SelectionChanged(object sender, EventArgs e)
         {           
             if (dataGridViewPizza.SelectedRows.Count > 0)
@@ -33,9 +54,10 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
                 DataGridViewRow row = dataGridViewPizza.SelectedRows[0];
                 if (row!=null)
                 {
-                    string data = row.Cells[0].Value.ToString();
-                    int pizzaAzonosito = Convert.ToInt32(data);
-                    vezerlo.lekerPizzaAdatokatModositashoz(pizzaAzonosito);
+                    string data = row.Cells["azon"].Value.ToString();
+                    int pizzaAzonosito = -1;
+                    if (int.TryParse(data, out pizzaAzonosito))
+                        vezerlo.lekerPizzaAdatokatModositashoz(pizzaAzonosito);
                 }
             }
         }
@@ -71,6 +93,21 @@ namespace GuiDatabaseKomplexPizzaZarodolgozatMinta
             textBoxPizzaAzonosito.Text = p.getAzon().ToString();
             textBoxPizzaNev.Text = p.getNev();
             textBoxPizzaAr.Text = p.getAr().ToString();
+        }
+        #endregion
+        #region Belső függvények
+        private void kijeloltSorbanPizzaAdatModositas(Pizza ujPizza)
+        {
+            if (dataGridViewPizza.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dataGridViewPizza.SelectedRows[0];
+                if (row != null)
+                {
+                    row.Cells["azon"].Value = ujPizza.getAzon();
+                    row.Cells["nev"].Value = ujPizza.getNev();
+                    row.Cells["ar"].Value = ujPizza.getAr();
+                }
+            }
         }
         #endregion
     }
